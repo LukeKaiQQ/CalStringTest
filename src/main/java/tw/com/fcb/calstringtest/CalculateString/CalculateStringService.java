@@ -55,6 +55,7 @@ public class CalculateStringService {
 				System.out.println("數字超出範圍");
 			}
 			else {
+				// Add Zeros
 				String zeroString = new String();
 				for(int i  = 0 ; i < (numLength - number.length()) ; i++) {
 					zeroString = zeroString + "0";
