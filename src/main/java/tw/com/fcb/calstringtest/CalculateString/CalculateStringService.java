@@ -12,6 +12,7 @@ public class CalculateStringService {
 		try {
 			CalculateString calculateString = new CalculateString();
 			
+			@SuppressWarnings("resource")
 			Scanner scanner = new Scanner(System.in);
 			System.out.print("請輸入選項: 1)靠右補零. 2)靠左補零.: ");
 			int option = scanner.nextInt();
@@ -41,6 +42,7 @@ public class CalculateStringService {
 	
 	public void inputOption(CalculateString cString) {
 		try {
+			@SuppressWarnings("resource")
 			Scanner scanner = new Scanner(System.in);
 			System.out.print("請輸入數字長度: ");
 			int numLength = scanner.nextInt();
